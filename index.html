@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Genomics Associates | Stop Guessing. Know Exactly.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            900: '#1A1A1A', // Deep Slate/Onyx
+                        },
+                        accent: {
+                            500: '#4F46E5', // Indigo
+                            600: '#4338CA', // Deep Indigo
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom subtle fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-accent-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <!-- Assuming MGA logo.jpeg is in the same directory -->
+                    <img src="MGA logo.jpeg" alt="Mind Genomics Associates Logo" class="h-10 w-auto rounded-md object-contain bg-white" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzFBMUExQSIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NR0E8L3RleHQ+PC9zdmc+'">
+                    <span class="font-bold text-xl tracking-tight text-slate-900 hidden sm:block">Mind Genomics Associates</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#challenge" class="text-gray-600 hover:text-accent-600 font-medium transition-colors">The Challenge</a>
+                    <a href="#outcomes" class="text-gray-600 hover:text-accent-600 font-medium transition-colors">Outcomes</a>
+                    <a href="#impact" class="text-gray-600 hover:text-accent-600 font-medium transition-colors">Impact</a>
+                    <a href="#team" class="text-gray-600 hover:text-accent-600 font-medium transition-colors">Team</a>
+                    <a href="https://calendar.app.google/bgJ9VEto3F8Hm8Yb8" target="_blank" rel="noopener noreferrer" class="bg-accent-500 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-accent-600 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Book Strategy Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight mb-8">
+                Stop Guessing. <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 to-blue-400">Know Exactly What Drives</span><br/> Your Customers' Decisions.
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                Traditional surveys tell you what people <em>think</em> they want. We uncover the hidden cognitive patterns and mindsets that actually trigger them to buy, engage, and act.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="https://calendar.app.google/bgJ9VEto3F8Hm8Yb8" target="_blank" rel="noopener noreferrer" class="bg-accent-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg shadow-accent-500/30 hover:bg-accent-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    Book a Strategy Call
+                </a>
+            </div>
+        </div>
+        <!-- Decorative background elements -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent-500/5 rounded-full blur-3xl -z-10"></div>
+    </section>
+
+    <!-- Section 2: The Challenge -->
+    <section id="challenge" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">The Problem with Asking "Why?"</h2>
+                    <div class="w-20 h-1 bg-accent-500 mb-8"></div>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Focus groups and traditional surveys are fundamentally flawed. When asked direct questions, consumers provide answers they believe are socially acceptable or logical. They over-intellectualize.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        This "intellectualization bias" leaves you with generic, sanitized data that doesn't translate into real-world sales or engagement. To drive action, you need to bypass cognitive filters and map the subconscious mind.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-accent-500 to-blue-500 rounded-2xl transform rotate-3 opacity-20"></div>
+                    <div class="bg-gray-800 border border-gray-700 p-8 rounded-2xl relative shadow-2xl">
+                        <svg class="w-12 h-12 text-red-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
+                        <h3 class="text-2xl font-semibold mb-4 text-white">The Cost of Bad Data</h3>
+                        <ul class="space-y-4 text-gray-400">
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">✕</span>
+                                Wasted ad spend on the wrong hooks
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">✕</span>
+                                Products built for demographics, not desires
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-red-400 mt-1">✕</span>
+                                Months lost in iterative guessing games
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Outcomes -->
+    <section id="outcomes" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Transform Data into Actionable Innovation</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">This is what happens when you apply the cartography of cognition to your business.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-accent-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-accent-600">Hyper-Targeted Messaging</h3>
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            Discover the exact combinations of words, ideas, and benefits that resonate with distinct consumer segments. Stop wasting ad spend on the wrong hooks and start speaking the exact language that converts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-accent-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-accent-600">Horizontal Segmentation</h3>
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            Divide your market not by arbitrary demographics, but by shared "mindsets." Speak directly to how different groups feel and behave in specific situations, creating deeply personalized experiences at scale.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-accent-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-accent-600">De-Risked Product Development</h3>
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            Test thousands of combinations of features, packaging, and concepts before you ever build a prototype. Know what the market wants before they even know they want it, saving millions in misdirected R&D.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer">
+                    <div class="w-14 h-14 bg-accent-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-accent-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-accent-600">Rapid Speed to Market</h3>
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                        <p class="text-gray-600 leading-relaxed mt-4">
+                            Our iterative, rapid-testing environment means you move from hypothesis to actionable strategy in a fraction of the time of traditional market research. Outpace competitors by acting on superior data, faster.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Cross-Industry Impact -->
+    <section id="impact" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Data Analytics Visualization" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Proven Across Industries</h2>
+                    <div class="w-20 h-1 bg-accent-500 mb-8"></div>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Mind Genomics isn't just theory; it's a versatile innovation engine. Our data-driven cartography of the mind delivers clear direction regardless of your sector.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="relative group flex items-center gap-4 text-gray-700 font-medium bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                            <div class="bg-white p-2 rounded-full shadow-sm"><svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div>
+                            <span>Optimizing messaging for Consumer Packaged Goods</span>
+                            
+                            <!-- Hover Pop-up -->
+                            <div class="absolute bottom-full left-0 md:left-1/2 md:-translate-x-1/2 mb-3 w-72 md:w-80 bg-white text-sm text-gray-600 font-normal p-5 rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 pointer-events-none">
+                                <strong class="block text-slate-900 mb-1 text-base">Example: Skin Cosmetics</strong>
+                                We tested thousands of rapid message combinations for a new skin cosmetic product, identifying the exact consumer mindset triggers that drive purchase intent before a physical prototype was ever finalized.
+                                <!-- decorative arrow -->
+                                <div class="absolute top-full left-8 md:left-1/2 md:-translate-x-1/2 -mt-px border-8 border-transparent border-t-white"></div>
+                            </div>
+                        </li>
+                        <li class="relative group flex items-center gap-4 text-gray-700 font-medium bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                            <div class="bg-white p-2 rounded-full shadow-sm"><svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg></div>
+                            <span>Mapping user requirements for EdTech platforms</span>
+                            
+                            <!-- Hover Pop-up -->
+                            <div class="absolute bottom-full left-0 md:left-1/2 md:-translate-x-1/2 mb-3 w-72 md:w-80 bg-white text-sm text-gray-600 font-normal p-5 rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 pointer-events-none">
+                                <strong class="block text-slate-900 mb-1 text-base">Example: "Learning to Remember" App</strong>
+                                Instead of asking users what they wanted, we uncovered the specific features and stories that drive engagement for an educational app, seamlessly mapping the true cognitive requirements of the end-user.
+                                <!-- decorative arrow -->
+                                <div class="absolute top-full left-8 md:left-1/2 md:-translate-x-1/2 -mt-px border-8 border-transparent border-t-white"></div>
+                            </div>
+                        </li>
+                        <li class="relative group flex items-center gap-4 text-gray-700 font-medium bg-gray-50 p-4 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                            <div class="bg-white p-2 rounded-full shadow-sm"><svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></div>
+                            <span>Driving patient compliance and engagement in Healthcare</span>
+                            
+                            <!-- Hover Pop-up -->
+                            <div class="absolute bottom-full left-0 md:left-1/2 md:-translate-x-1/2 mb-3 w-72 md:w-80 bg-white text-sm text-gray-600 font-normal p-5 rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 pointer-events-none">
+                                <strong class="block text-slate-900 mb-1 text-base">Example: Primary Care Communications</strong>
+                                By modeling patient mindsets for general practitioner visits, we discovered how specific relational cues, tone, and structured messaging dramatically shift patient trust, satisfaction, and adherence to care plans.
+                                <!-- decorative arrow -->
+                                <div class="absolute top-full left-8 md:left-1/2 md:-translate-x-1/2 -mt-px border-8 border-transparent border-t-white"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Our Leadership Team -->
+    <section id="team" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">The Architects of Cognitive Cartography</h2>
+                <div class="w-20 h-1 bg-accent-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400">Pioneers in experimental psychology and data-driven strategy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Howard Moskowitz -->
+                <a href="https://www.linkedin.com/search/results/all/?keywords=Howard%20Moskowitz" target="_blank" rel="noopener noreferrer" class="group bg-gray-800 border border-gray-700 rounded-xl p-6 hover:bg-gray-700 hover:border-accent-500 transition-all duration-300 text-center block">
+                    <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-700 group-hover:border-accent-500 transition-colors bg-gray-700 flex items-center justify-center">
+                        <span class="text-2xl font-bold absolute text-gray-300">HM</span>
+                        <!-- Replace src with the actual LinkedIn image URL or local file path -->
+                        <img src="howard.jpg" alt="Howard Moskowitz" class="relative z-10 w-full h-full object-cover" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Howard Moskowitz</h3>
+                    <p class="text-accent-400 font-medium text-sm mb-4">President & Founder</p>
+                    <div class="inline-flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
+                        View on LinkedIn <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                </a>
+
+                <!-- Dave Stevens -->
+                <a href="https://www.linkedin.com/search/results/all/?keywords=Dave%20Stevens%20MFA" target="_blank" rel="noopener noreferrer" class="group bg-gray-800 border border-gray-700 rounded-xl p-6 hover:bg-gray-700 hover:border-accent-500 transition-all duration-300 text-center block">
+                    <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-700 group-hover:border-accent-500 transition-colors bg-gray-700 flex items-center justify-center">
+                        <span class="text-2xl font-bold absolute text-gray-300">DS</span>
+                        <!-- Replace src with the actual LinkedIn image URL or local file path -->
+                        <img src="dave.jpg" alt="Dave Stevens" class="relative z-10 w-full h-full object-cover" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Dave Stevens, MFA</h3>
+                    <p class="text-accent-400 font-medium text-sm mb-4">Chief Strategy Officer (CSO)</p>
+                    <div class="inline-flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
+                        View on LinkedIn <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                </a>
+
+                <!-- J. Brown Fitterman -->
+                <a href="https://www.linkedin.com/search/results/all/?keywords=J.%20Brown%20Fitterman" target="_blank" rel="noopener noreferrer" class="group bg-gray-800 border border-gray-700 rounded-xl p-6 hover:bg-gray-700 hover:border-accent-500 transition-all duration-300 text-center block">
+                    <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-700 group-hover:border-accent-500 transition-colors bg-gray-700 flex items-center justify-center">
+                        <span class="text-2xl font-bold absolute text-gray-300">JF</span>
+                        <!-- Replace src with the actual LinkedIn image URL or local file path -->
+                        <img src="jbrown.jpg" alt="J. Brown Fitterman" class="relative z-10 w-full h-full object-cover" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">J. Brown Fitterman</h3>
+                    <p class="text-accent-400 font-medium text-sm mb-4">Chief Technology Officer (CTO)</p>
+                    <div class="inline-flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
+                        View on LinkedIn <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                </a>
+
+                <!-- Danny Moskowitz -->
+                <a href="https://www.linkedin.com/search/results/all/?keywords=Danny%20Moskowitz" target="_blank" rel="noopener noreferrer" class="group bg-gray-800 border border-gray-700 rounded-xl p-6 hover:bg-gray-700 hover:border-accent-500 transition-all duration-300 text-center block">
+                    <div class="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-700 group-hover:border-accent-500 transition-colors bg-gray-700 flex items-center justify-center">
+                        <span class="text-2xl font-bold absolute text-gray-300">DM</span>
+                        <!-- Replace src with the actual LinkedIn image URL or local file path -->
+                        <img src="danny.jpg" alt="Danny Moskowitz" class="relative z-10 w-full h-full object-cover" onerror="this.style.display='none'">
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Danny Moskowitz</h3>
+                    <p class="text-accent-400 font-medium text-sm mb-4">Chief Operating Officer (COO)</p>
+                    <div class="inline-flex items-center text-sm text-gray-400 group-hover:text-white transition-colors">
+                        View on LinkedIn <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Final CTA -->
+    <section id="cta" class="py-24 bg-accent-600 relative overflow-hidden">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 40V0H40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Ready to map your market's mind?</h2>
+            <p class="text-xl text-accent-100 mb-10 leading-relaxed font-light">
+                Stop relying on guesswork and surface-level data. Let's design an experiment that gives you the precise answers you need to scale confidently.
+            </p>
+            <a href="https://calendar.app.google/bgJ9VEto3F8Hm8Yb8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-white text-accent-600 px-8 py-4 rounded-full text-xl font-bold shadow-xl hover:bg-gray-50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                Schedule Your Discovery Call
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-gray-800 py-8 text-center">
+        <p class="text-gray-500 text-sm">
+            &copy; 2026 Mind Genomics Associates. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
